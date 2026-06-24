@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CYBORG</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <h2 class="logo">CYBORG</h2>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get Started</button>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <h1>Future, Cyborg World</h1>
+    <p>AI + Human Technology Revolution</p>
+    <button class="btn" onclick="document.getElementById('features').scrollIntoView({behavior:'smooth'})">Explore Now</button>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <h2>Features</h2>
+    <div class="boxes">
+      <div class="box">🤖 AI Integration</div>
+      <div class="box">🔒 Cyber Security</div>
+      <div class="box">🧠 Neural Network</div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <h2>About Cyborg Technology</h2>
+    <p>
+      Cyborg technology combines human intelligence with artificial intelligence.
+      It is the future of robotics, AI systems, and human enhancement.
+    </p>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery">
+    <h2>Gallery</h2>
+    <div class="images">
+      <!--
+        TO ADD YOUR IMAGES:
+        1. Create a folder called "images" in the same folder as this file
+        2. Put your images inside: robot1.jpg, robot2.jpg, robot3.jpg
+        3. The images will automatically appear here
+      -->
+      <div class="img-placeholder">🤖<br>Robot 1<br><small>Add images/robot1.jpg</small></div>
+      <div class="img-placeholder">🦾<br>Robot 2<br><small>Add images/robot2.jpg</small></div>
+      <div class="img-placeholder">🧬<br>Robot 3<br><small>Add images/robot3.jpg</small></div>
+
+      <!-- Once you have images, replace the above divs with these img tags:
+      <img src="images/robot1.jpg" alt="Robot 1">
+      <img src="images/robot2.jpg" alt="Robot 2">
+      <img src="images/robot3.jpg" alt="Robot 3">
+      -->
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <input type="text" placeholder="Your Name" /><br><br>
+    <input type="email" placeholder="Your Email" /><br><br>
+    <textarea placeholder="Message"></textarea><br><br>
+    <button class="btn" onclick="alert('Message sent! Thank you.')">Send Message</button>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Cyborg Landing Page | All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

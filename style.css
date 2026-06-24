@@ -1,0 +1,270 @@
+/* ===== RESET & BASE ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #000000, #0a0a2a, #000000);
+  color: white;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #111;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  color: cyan;
+  font-size: 24px;
+  text-shadow: 0 0 10px cyan;
+}
+
+.navbar nav a {
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+.navbar nav a:hover {
+  color: cyan;
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+  background: cyan;
+  color: black;
+  border: none;
+  padding: 10px 22px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px cyan;
+}
+
+/* ===== HERO ===== */
+.hero {
+  text-align: center;
+  padding: 100px 40px;
+}
+
+.hero h1 {
+  color: cyan;
+  font-size: 48px;
+  text-shadow: 0 0 15px cyan;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+/* ===== FEATURES ===== */
+.features {
+  text-align: center;
+  padding: 60px 40px;
+}
+
+.features h2 {
+  font-size: 32px;
+  text-shadow: 0 0 10px cyan;
+  margin-bottom: 30px;
+}
+
+.boxes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.box {
+  background: #222;
+  padding: 24px 30px;
+  width: 180px;
+  border-radius: 12px;
+  font-size: 15px;
+  border: 1px solid #333;
+  transition: 0.3s;
+}
+
+.box:hover {
+  border-color: cyan;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+/* ===== ABOUT ===== */
+.about {
+  text-align: center;
+  padding: 70px 60px;
+  background: #0f0f0f;
+}
+
+.about h2 {
+  color: cyan;
+  font-size: 30px;
+  text-shadow: 0 0 10px cyan;
+  margin-bottom: 20px;
+}
+
+.about p {
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+  color: #ccc;
+}
+
+/* ===== GALLERY ===== */
+.gallery {
+  text-align: center;
+  padding: 60px 40px;
+}
+
+.gallery h2 {
+  font-size: 30px;
+  text-shadow: 0 0 10px cyan;
+  margin-bottom: 30px;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Real images (when you add them) */
+.images img {
+  width: 220px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid cyan;
+  transition: 0.3s;
+}
+
+.images img:hover {
+  box-shadow: 0 0 20px cyan;
+  transform: scale(1.05);
+}
+
+/* Placeholder shown until images are added */
+.img-placeholder {
+  width: 220px;
+  height: 160px;
+  border-radius: 10px;
+  border: 2px dashed cyan;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  color: #aaa;
+  background: #111;
+}
+
+.img-placeholder small {
+  font-size: 11px;
+  margin-top: 6px;
+  color: #555;
+}
+
+/* ===== CONTACT ===== */
+.contact {
+  text-align: center;
+  padding: 70px 40px;
+  background: #111;
+}
+
+.contact h2 {
+  color: cyan;
+  font-size: 30px;
+  text-shadow: 0 0 10px cyan;
+  margin-bottom: 30px;
+}
+
+.contact input,
+.contact textarea {
+  width: 320px;
+  padding: 12px;
+  background: #1a1a2e;
+  border: 1px solid #333;
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  border-color: cyan;
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.3);
+}
+
+.contact textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 24px;
+  background: black;
+  border-top: 1px solid cyan;
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+    padding: 16px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .box {
+    width: 85%;
+  }
+
+  .images img,
+  .img-placeholder {
+    width: 90%;
+    height: auto;
+  }
+
+  .contact input,
+  .contact textarea {
+    width: 90%;
+  }
+}
